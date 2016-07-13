@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>demo-api</artifactId>
+    <groupId>com.liebao.lb7881</groupId>
+    <version>0.0.1</version>
+    <distributionManagement>  
+    <repository>  
+        <id>releases</id>  
+        <name>private-nexus-library-releases</name>  
+        <url>http://maven.dev.17of.com:8081/nexus/content/repositories/releases/</url>  
+    </repository>  
+  
+    <snapshotRepository>  
+        <id>snapshots</id>  
+        <name>private-nexus-library-snapshots</name>  
+        <url>http://maven.dev.17of.com:8081/nexus/content/repositories/snapshots/</url>  
+    </snapshotRepository>  
+</distributionManagement> 
+    <dependencies>
+    	<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.7</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+		  <groupId>com.liebao.lb7881</groupId>
+		  <artifactId>lb7881-common</artifactId>
+		  <version>0.0.1</version>
+		</dependency>
+    </dependencies>
+</project>
